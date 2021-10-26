@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 05</title>
+</head>
+<body>
+    <script>
+        var i, idade, altura, sexo, quanthom = 0, quantmulh = 0, maior = 0, menor = 0, maioraltura = 0, sexomaioraltura, contpessoa;
+        cont = parseInt(prompt("Quantas pessoas serão avaliadas ?"));
+        for(i = 1; i <= cont; i++) {
+            idade = parseInt(prompt("Qual a idade da "+i+"ª pessoa: "));
+            altura = parseFloat(prompt("Qual a altura da "+i+"ª pessoa (Digite com .(ponto) para separar casas decimais): "));
+            sexo = prompt("Qual o sexo da "+i+"ª pessoa (Digite como [M] ou [F]): ");
+            if(sexo == 'M')
+            {
+                quanthom++;
+            }
+            if (sexo == 'F')
+            {
+                quantmulh++;
+            }
+            if(idade >= 18)
+            {
+                maior++;
+            }
+            if (idade < 18)
+            {
+                menor++;
+            }
+            if (altura>maioraltura)
+            {
+                maioraltura=altura;
+                sexomaioraltura=sexo;
+                contpessoa=i;
+            }
+        }
+        document.write("Mostrando resultados<br>");
+        document.write("<br>");
+        document.write("Total de homens: "+quanthom+"<br>");
+        document.write("Total de mulheres: "+quantmulh+"<br>");
+        document.write("Maior altura: "+maioraltura+"<br>");
+        document.write("Sexo da maior altura: "+sexomaioraltura+" que é a "+contpessoa+"ª digitada <br>");
+        document.write("Maiores de 18 anos: "+maior+"<br>");
+        document.write("Menores de 18 anos: "+menor+"<br>");
+    </script>
+</body>
+</html>

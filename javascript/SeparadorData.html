@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Javascript - ex01</title>
+</head>
+<body>
+    <script>
+        function mesDigitado(mes) {
+            switch (mes) {
+                case 1 || 01:
+                    return ("Janeiro");
+                    break;
+                case 2 || 02:
+                    return ("Fevereiro");
+                    break;
+                case 3 || 03:
+                    return ("Março");
+                    break;
+                case 4 || 04:
+                    return ("Abril");
+                    break;
+                case 5 || 05:
+                    return ("Maio");
+                    break;
+                case 6 || 06:
+                    return ("Junho");
+                    break;
+                case 7 || 07:
+                    return ("Julho");
+                    break;
+                case 8 || 08:
+                    return ("Agosto");
+                    break;
+                case 9 || 09:
+                    return ("Setembro");
+                    break;
+                case 10:
+                    return ("Outubro");
+                    break;
+                case 11:
+                    return ("Novembro");
+                    break;
+                case 12:
+                    return ("Dezembro");
+                    break;
+                default:
+                    break;
+            }
+        }
+    dataDigitada = prompt("Informe a Data no Formato dd/mm/aaaa - dia/mes/ano");
+    dataFormatada = Date(dataDigitada);
+    separador = dataDigitada.split("/");
+    document.write(+ separador[0] + " de " + mesDigitado(parseInt(separador[1])) + " de " + separador[2]);
+    </script>
+    <br>
+    <br>
+    <a href="index.html"><input class="buttonVoltar" type="button" value="Recomeçar"></a>   
+</body>
+</html>

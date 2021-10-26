@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 02</title>
+</head>
+<body>
+    <button onclick="palindrome()">Clique para digitar uma palavra</button>
+    <script>
+         function palindrome(){
+             var palavra = prompt("Digite a palavra a ser verificada: ");
+             var palavra_invertida = palavra.split('').reverse().join('');
+             if(palavra == palavra_invertida){
+                 alert("A palavra digitada é Palindrome! ")
+             }else{
+                 alert("A palavra digitada não é Palindrome! ")
+             }
+         }
+    </script>
+ </body>
+</html>

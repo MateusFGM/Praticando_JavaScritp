@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 04</title>
+</head>
+<body>
+    <button onclick="media()">Calcular Média</button>
+    <script>
+        function media(){
+            var totalnotas=0, i, mediatotal;
+            cont = parseInt(prompt("Quantas notas serão calculadas ?"));
+                for(i = 1; i <= cont; i++)
+                {
+                    nota = parseFloat(prompt("Qual a "+i+"ª nota (Digite com .(ponto) para separar casas decimais): "));
+                    totalnotas=totalnotas+nota;
+                }
+            mediatotal=totalnotas/cont;
+            document.write("<br>");
+            document.write("A média das notas digitadas é: "+mediatotal);
+        }
+    </script>
+</body>
+</html>

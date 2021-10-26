@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 03</title>
+</head>
+<body>
+Nomes: <input type="text" id="Nomes">
+<button onclick="exibirNomes()">Inverter</button>
+<br>
+(Utilize vírgula para separar os nomes)
+    <script>
+        function exibirNomes(){
+            nomes = document.getElementById("Nomes").value;
+            nomes = nomes.split(",");
+            for(i=nomes.length-1;i>=0;i--)
+            {
+                document.write(i+"ª - "+nomes[i]+"<br>");
+            }
+    }
+    </script>
+</body>
+</html>

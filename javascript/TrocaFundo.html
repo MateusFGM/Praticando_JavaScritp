@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Javascript - ex03</title>
+</head>
+<body id="pagina"></body>
+    <script>
+        function Vermelho(){
+            document.getElementById('pagina').style.backgroundColor = 'rgb(255,0,0)';
+        }
+        function Verde(){
+            document.getElementById('pagina').style.backgroundColor = 'rgb(0,128,0)';
+        }
+        function Azul(){
+            document.getElementById('pagina').style.backgroundColor = 'rgb(0,0,205)';
+        }
+        function Amarelo(){
+            document.getElementById('pagina').style.backgroundColor = 'rgb(255,255,0)';
+        }
+    </script>
+    <form>
+        <button type="button" onclick="Vermelho()">Vermelho</button>
+        <button type="button" onclick="Verde()">Verde</button>
+        <button type="button" onclick="Azul()">Azul</button>
+        <button type="button" onclick="Amarelo()">Amarelo</button>
+    </form>
+</body>
+</html>

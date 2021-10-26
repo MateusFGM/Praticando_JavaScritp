@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Javascript - ex04</title>
+</head>
+<body>
+    <script>
+        saida = document.getElementById('saida')
+        function soma(){
+            n1 = parseInt(document.getElementById('n1').value)
+            n2 = parseInt(document.getElementById('n2').value)
+            n3 = parseInt(document.getElementById('n3').value)
+            total = n1+n2+n3
+            alert("A soma dos valores é: " + total);
+        }
+        function media(){
+            n1 = parseInt(document.getElementById('n1').value)
+            n2 = parseInt(document.getElementById('n2').value)
+            n3 = parseInt(document.getElementById('n3').value)
+            dividindo = ((n1+n2+n3)/3)
+            alert("A média dos valores é: " + dividindo);
+        }
+        function produto(){
+            n1 = parseInt(document.getElementById('n1').value)
+            n2 = parseInt(document.getElementById('n2').value)
+            n3 = parseInt(document.getElementById('n3').value)
+            multiplicacao = n1*(n2*n3)
+            alert("A multiplicação dos valores é: " + multiplicacao);
+        }
+        function maior(){
+            n1 = parseInt(document.getElementById('n1').value)
+            n2 = parseInt(document.getElementById('n2').value)
+            n3 = parseInt(document.getElementById('n3').value)
+            if (n1>n2){
+                alto = n1
+            } else if (n2>n3){
+                alto = n2
+            } else {
+                alto = n3
+            }
+            alert("O maior número digitado é: " + alto);
+        }
+        function menor(){
+            n1 = parseInt(document.getElementById('n1').value)
+            n2 = parseInt(document.getElementById('n2').value)
+            n3 = parseInt(document.getElementById('n3').value)
+            if (n1<n2){
+                baixo = n1
+            } else if (n2<n3){
+                baixo = n2
+            } else {
+                baixo = n3
+            }
+            alert("O menor número digitado é: " + baixo);
+        }
+    </script>
+    <form action="calculando" method="post">
+        <label for="primeiro">Digite o primeiro valor</label>
+        <input type="text" id="n1">
+            <br>
+        <label for="segundo">Digite o segundo valor</label>
+        <input type="text" id="n2">
+            <br>
+        <label for="terceiro">Digite o terceiro valor</label>
+        <input type="text" id="n3">
+            <br>
+        <section>
+            <p>Exibindo resultados</p>
+            <button type="button" onclick="soma()">Soma</button>
+            <button type="button" onclick="media()">Média</button>
+            <button type="button" onclick="produto()">Multiplicação</button>
+            <button type="button" onclick="maior()">Maior</button>
+            <button type="button" onclick="menor()">Menor</button>
+        </section>
+    </form>
+</body>
+</html>
