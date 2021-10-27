@@ -9,4 +9,4 @@
 <b>Média - </b>Calcula a médias dos valores informados pelo usuário;<br><br>
 <b>Avaliação - </b>Realiza uma avaliação das pessoas informadas trazendo: Total de homens e mulheres, a maior altura, sexo da maior altura, maiores e menores de 18 anos avaliados;<br><br>
 Separador de datas2 - Separa as datas informadas pelo usuário em dia, mês e ano.<br><br><br><br>
-<b>Atividade realizada para treino da linguagem e desenvolvimento da lógica para resolução de problemas.</b>
+<b>Atividade realizada para treino da linguagem Javascript com aplicação interna com a tag <script> dentro do HTML e desenvolvimento da lógica para resolução de problemas.</b>
