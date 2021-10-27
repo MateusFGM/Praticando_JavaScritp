@@ -9,4 +9,4 @@ Lista Invertida - Inverte a sequência dos nomes informados pelo usuário, indep
 Média - calcula a médias dos valores informados pelo usuário;<br><br>
 Avaliação - Realiza uma avaliação das pessoas informadas trazendo: Total de homens e mulheres, a maior altura, sexo da maior altura, maiores e menores de 18 anos avaliados;<br><br>
 Separador de datas2 - Separa as datas informadas pelo usuário em dia, mês e ano.<br><br><br><br>
-Atividade realizada para treino da linguagem e desenvolvimento da lógica para resolução de problemas.
+<s>Atividade realizada para treino da linguagem e desenvolvimento da lógica para resolução de problemas.<s>
